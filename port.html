@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Home</title>
+  
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+  <!-- Header/Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">MyPortfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+ 
+  <!-- Hero Banner Section -->
+  <section id="home" class="hero d-flex align-items-center text-center text-white">
+    <div class="container">
+      <h1 class="fade-in">Hello, I’m <span class="text-warning">Reddypalli Manisha</span></h1>
+      <p class="lead">Software Engineer</p>
+    </div>
+  </section>
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Profile Photo -->
+        <div class="col-md-5 text-center mb-4 mb-md-0">
+          <img src="Image.jpg" alt="Profile Photo" class="img-fluid rounded-circle shadow-lg about-img">
+        </div>
+        <!-- About Text -->
+        <div class="col-md-7">
+          <h2 class="mb-3">About Me</h2>
+          <p class="lead">
+            Hi, I’m <strong>Manisha</strong><br>
+            I’m a passionate web developer who loves building modern, responsive, and user-friendly websites. 
+            I enjoy working with HTML5, CSS3, JavaScript, and Bootstrap to create clean, efficient, and creative web experiences.
+          </p>
+          <p>
+            Outside coding, I enjoy problem-solving, design, and constantly learning new technologies to keep improving my skills. 
+            My goal is to deliver work that is not only functional but also delightful for users.
+          </p>
+          <div class="text-center mt-3">
+  <audio controls>
+    <source src="relaxing-guitar-loop-v5-245859.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+ 
+          <a href="#skills" class="btn btn-outline-primary mt-3">See My Skills</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Skills Section -->
+  <section id="skills" class="bg-light py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">My Skills</h2>
+      <p class="mb-5">Here are some of the technologies and tools I work with:</p>
+      
+      <div class="row g-4">
+        <!-- Skill Item -->
+        <div class="col-6 col-md-3">
+          <div class="skill-box shadow-sm p-4">
+            <i class="bi bi-code-slash skill-icon"></i>
+            <h5 class="mt-3">HTML5</h5>
+          </div>
+        </div>
+        
+        <div class="col-6 col-md-3">
+          <div class="skill-box shadow-sm p-4">
+            <i class="bi bi-palette skill-icon"></i>
+            <h5 class="mt-3">CSS3</h5>
+          </div>
+        </div>
+        
+        <div class="col-6 col-md-3">
+          <div class="skill-box shadow-sm p-4">
+            <i class="bi bi-lightning skill-icon"></i>
+            <h5 class="mt-3">JavaScript</h5>
+          </div>
+        </div>
+        
+        <div class="col-6 col-md-3">
+          <div class="skill-box shadow-sm p-4">
+            <i class="bi bi-bootstrap skill-icon"></i>
+            <h5 class="mt-3">Bootstrap</h5>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="skill-box shadow-sm p-4">
+            <i class="bi bi-bootstrap skill-icon"></i>
+            <h5 class="mt-3">C#</h5>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="skill-box shadow-sm p-4">
+            <i class="bi bi-bootstrap skill-icon"></i>
+            <h5 class="mt-3">Java</h5>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="skill-box shadow-sm p-4">
+            <i class="bi bi-bootstrap skill-icon"></i>
+            <h5 class="mt-3">JQuery</h5>
+          </div>
+        </div>
+    </div>
+  </section>
+  <!-- Projects Section -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">My Projects</h2>
+      <p class="text-center mb-5">Here are some of my recent works:</p>
+      
+      <div class="row g-4">
+        <!-- Project 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card shadow-sm h-100">
+            <img src="image2.png" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">LibraryManagementSystem-Java</h5>
+              <p class="card-text">This system aims to provide a basic way to manage a library, allowing operations that are common in library setting: adding/ removing books, tracking issued books. It would help in automating tasks which would otherwise be manual, reduce errors, and maintain persistent storage of relevant data.</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project1Modal">View More</button>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- Project 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card shadow-sm h-100">
+            <img src="image3" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Pet Adoption Platform</h5>
+              <p class="card-text">It is to support a pet adoption platform. It focuses on modeling and managing information about pets, shelters, donations, adoption events, and participants. The projec uses sql to create and manage the database, ensuring robust relationships between entities through primary keys, foreign keys, and constraints.</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project2Modal">View More</button>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- Project 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card shadow-sm h-100">
+            <img src="Image4" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">Insurance Dataset</h5>
+              <p class="card-text">The project concludes that the random forest classifier is more accurate than the decision tree classifier for this specific problem. The report also identifies the most important features for  predicting smoker status, finding that charges is the most significant feature, with a feature importance score of 0.88, followed by bmi(0.08), children(0.015), region(0.014), and sex(0.006).</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project3Modal">View More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+  <!-- Project Modals -->
+  <!-- Project 1 Modal -->
+  <div class="modal fade" id="project1Modal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header"><h5 class="modal-title">LibraryManagementSystem</h5></div>
+        <div class="modal-body">
+          <p>This system aims to provide a basic way to manage a library, allowing operations that are common in library setting: adding/ removing books, tracking issued books. It would help in automating tasks which would otherwise be manual, reduce errors, and maintain persistent storage of relevant data.</p>
+          <a href="https://github.com/RManisha16/LibraryManagementSystem-Java.git"class="btn btn-primary">View Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Project 2 Modal -->
+  <div class="modal fade" id="project2Modal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header"><h5 class="modal-title">Pet Adoption Platform</h5></div>
+        <div class="modal-body">
+          <p>It is to support a pet adoption platform. It focuses on modeling and managing information about pets, shelters, donations, adoption events, and participants. The projec uses sql to create and manage the database, ensuring robust relationships between entities through primary keys, foreign keys, and constraints.</p>
+          <a href="https://github.com/RManisha16/MINIPROJECT-MANISHA-REDDYPALLI.git" class="btn btn-primary">View Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Project 3 Modal -->
+  <div class="modal fade" id="project3Modal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header"><h5 class="modal-title">Insurance Dataset</h5></div>
+        <div class="modal-body">
+          <p>The project concludes that the random forest classifier is more accurate than the decision tree classifier for this specific problem. The report also identifies the most important features for  predicting smoker status, finding that charges is the most significant feature, with a feature importance score of 0.88, followed by bmi(0.08), children(0.015), region(0.014), and sex(0.006).</p>
+          <a href="https://github.com/RManisha16/MINIPROJECT.git" class="btn btn-primary">View Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contact Section -->
+  <section id="contact" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Me</h2>
+      <p class="text-center mb-5">Have a project in mind? Let’s get in touch!</p>
+ 
+      <form class="col-md-8 mx-auto shadow p-4 bg-white rounded">
+        <!-- Name -->
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+        </div>
+ 
+        <!-- Email -->
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+        </div>
+ 
+        <!-- Message -->
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea id="message" class="form-control" rows="5" placeholder="Write your message..." required></textarea>
+        </div>
+ 
+        <!-- Submit -->
+        <div class="d-grid">
+          <button type="submit" class="btn btn-success btn-lg">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+ 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+ 

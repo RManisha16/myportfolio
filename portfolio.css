@@ -1,0 +1,121 @@
+body {
+  scroll-behavior: smooth;
+}
+ 
+/* Hero Banner */
+.hero {
+  height: 100vh;
+  background: url("assets/banner.jpg") no-repeat center center/cover;
+  position: relative;
+}
+ 
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: #444; 
+}
+ 
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+ 
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+ 
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+ 
+.nav-link:hover {
+  color: #d01f07 !important;
+  text-decoration: underline;
+}
+/* About Section */
+.about-img {
+  max-width: 250px;
+  border: 6px solid #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+ 
+.about-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.25);
+}
+ 
+#about h2 {
+  font-weight: 700;
+}
+ 
+#about p {
+  color: #444;
+}
+
+/* Skills Section */
+.skill-box {
+  background: #fff;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+ 
+.skill-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+}
+ 
+.skill-icon {
+  font-size: 2.5rem;
+  color: #0d6efd; /* Bootstrap primary color */
+}
+
+/* Projects Section */
+#projects h2 {
+  font-weight: 700;
+}
+ 
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 12px;
+}
+ 
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.2);
+}
+ 
+.carousel-inner img {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* Contact Section */
+#contact h2 {
+  font-weight: 700;
+}
+ 
+form {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+ 
+form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+ 
+#contact .btn-success {
+  background: linear-gradient(90deg, #bebd6b, #d6ab87);
+  border: none;
+}
+ 
+#contact .btn-success:hover {
+  transform: scale(1.05);
+}
+ 
+audio{
+  outline: hotpink;
+  border-radius: 0px;
+  margin-top: 5px;
+}
